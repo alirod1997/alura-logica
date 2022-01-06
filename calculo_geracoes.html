@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo das gerações</title>
+</head>
+<body>
+    <h1>calculo das gerações</h1>
+    <Script>
+        var anoAtual = 2022;
+        var anosPassados = 1500;
+        var media = anoAtual - anosPassados;
+        var idadeMediaQuantosFilhos = 28;
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(texto) {
+            document.write(texto);
+        }
+
+        document.write("numero de gerações que se passaram :");
+        pulaLinha();
+        mostra(Math.round(media/idadeMediaQuantosFilhos));
+    </Script>
+</body>
+</html>
