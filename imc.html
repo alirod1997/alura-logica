@@ -18,10 +18,11 @@
 
         function calculaImc(altura, peso) {
             var imc = peso/(altura * altura);
-            mostra("o seu índice de massa corporal é > "+ Math.round(imc));    
+            return imc;
         }
-
-        calculaImc(1.73, 78);
+        
+        var imcCalculado = calculaImc(1.73, 78);
+        mostra("o seu índice de massa corporal é > "+ imcCalculado);    
 
     </Script>
 </body>
