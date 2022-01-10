@@ -9,11 +9,19 @@
 <body>
     <Script>
         function pulaLinha() {
-            document.write("<br>");
+            document.write("<br><br>");
         }
         function mostra(texto) {
             document.write("<big>"+texto+"</big>");
+            pulaLinha();
         }
+
+        function calculaImc(altura, peso) {
+            var imc = peso/(altura * altura);
+            mostra("o seu índice de massa corporal é > "+ Math.round(imc));    
+        }
+
+        calculaImc(1.73, 78);
 
     </Script>
 </body>
