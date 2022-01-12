@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em JS </title>
+</head>
+<body>
+    <Script>
+
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+        
+        function mostra(texto) {
+            document.write(texto);
+        }
+
+        var vitorias = parseInt(prompt("digite o numero de vitorias do seu time:"));
+        var empates = parseInt(prompt("digite o numero de empates do seu time:"));
+        var pontos = (vitorias*3)+empates;
+
+        mostra("os numero de pontos do seu time é : " + pontos+"<hr>");
+        
+        if (pontos > 28) {
+            mostra("seu time está melhor que no ano passado.");    
+        }
+        
+        if (pontos < 28) {
+            mostra("seu time está pior que no ano passado.");
+
+        }
+
+        if (pontos == 28) {
+            mostra("seu time está igual ao ano passado");
+        }
+
+
+
+    </Script>
+</body>
+</html>
