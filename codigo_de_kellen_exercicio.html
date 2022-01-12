@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculo imc </title>
+    <title>código de kellen exercicio</title>
 </head>
 <body>
     <Script>
+
         function pulaLinha() {
             document.write("<br><br>");
         }
+
         function mostra(texto) {
-            document.write("<big>"+texto+"</big>");
-            pulaLinha();
+            document.write(texto);
+            document.write("<hr>");
         }
 
         function calculaImc(altura, peso) {
             return peso/(altura * altura);
         }
-        
-        var imcCalculado = calculaImc(1.73, 78);
-        mostra("o seu índice de massa corporal é > "+ imcCalculado);    
 
+        mostra("o meu imc é "+ calculaImc(1,73, 78));
+        
     </Script>
+    
 </body>
 </html>
