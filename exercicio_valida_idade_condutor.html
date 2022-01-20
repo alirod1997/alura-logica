@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validar idade do condutor de veículo</title>
+</head>
+<body>
+    <Script>
+        function mostra(texto) {
+            document.write(texto);
+            }
+        function pulaLinha() {
+            document.write("<br><br><hr>");
+        }
+        var idadePermitida = 18;
+        var idadeCondutor = parseInt(prompt("digite sua idade: "));
+        var possuiCarteira = prompt("você possui habilitação de motorista ? responda S(sim) ou N(não)");
+        
+        if (idadeCondutor >= idadePermitida && possuiCarteira == "s") {
+            mostra("VOCÊ TEM IDADE E ESTÁ HABILITADO PARA CONDUZIR UM VEÍCULO !!!");
+
+        }
+        
+        if (idadeCondutor < idadePermitida) {
+            mostra("VOCÊ NÃO PODE DIRIGIR !!!");
+        }
+
+    </Script>
+
+</body>
+</html>
