@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificar se idade é um numero ou não</title>
+</head>
+<body>
+    <Script>
+        function pulaLinha() {
+            document.write("<br><br>");
+            document.write("<hr>");
+        }
+        function mostra(texto) {
+            document.write(texto);
+            pulaLinha();
+        }
+
+        var idade = parseInt(prompt("digite sua idade :"));
+        
+        while (isNaN(idade)) {
+            var idade = parseInt(prompt("digite sua idade :"));
+        }
+        alert(idade);
+    
+    </Script>
+</body>
+</html>
