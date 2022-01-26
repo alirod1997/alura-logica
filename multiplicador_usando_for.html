@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laço de repetição for para multiplicação de numeros</title>
+</head>
+<body>
+    <Script>
+        function pulaLinha() {
+            document.write("<br><br>");
+            document.write("<hr>");
+        }
+
+        function mostra(texto) {
+            document.write(texto);
+            pulaLinha();
+        }
+
+        var numero = parseInt(prompt("digite uma valor a multiplicar"));
+        for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+        mostra(numero * multiplicador);
+    
+        }
+
+    </Script>
+</body>
+</html>
