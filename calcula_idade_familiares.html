@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laço de repetição for para multiplicação de numeros</title>
+</head>
+<body>
+    <Script>
+        function pulaLinha() {
+            document.write("<br><br>");
+            document.write("<hr>");
+        }
+
+        function mostra(texto) {
+            document.write(texto);
+            pulaLinha();
+        }
+
+       var totalFamiliares = parseInt(prompt("quantos familiares vc possui ?"));
+       var numero = 1;
+       var totalIdades = 0;
+
+       while (numero <= totalFamiliares) {
+           var idade = parseInt(prompt("Informe idade do familiar"));
+           totalIdades = totalIdades + idade; 
+           numero++;
+        }
+        var mediaIdades = totalIdades/totalFamiliares;
+        mostra("a média de idades de seus familiares é : "+mediaIdades);
+        mostra("fim!");
+
+    </Script>
+</body>
+</html>

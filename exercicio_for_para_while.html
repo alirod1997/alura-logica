@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laço de repetição for para multiplicação de numeros</title>
+</head>
+<body>
+    <Script>
+        function pulaLinha() {
+            document.write("<br><br>");
+            document.write("<hr>");
+        }
+
+        function mostra(texto) {
+            document.write(texto);
+            pulaLinha();
+        }
+
+        for( var i = 0; i < 10; i++ ) {
+            mostra("O resultado é " + (2 * i) );
+        }
+        mostra("fim do for !");
+        //---------------------------------------
+        var n = 0;
+        while (n < 10) {
+            mostra("O resultado é " + (2 * n));
+            n ++;
+        }
+        mostra("fim do while !");
+
+    </Script>
+</body>
+</html>
