@@ -17,18 +17,23 @@
         }
 
         var numeroPensado = Math.round(Math.random()*10);
-        var chute = parseInt(prompt("qual seria seu numero chute ?"));
+        var tentativas = 1;
 
-        if (chute == numeroPensado) {
-            mostra("seu chute está certo !!");
-            mostra("você acertou o numero pensado foi >>>>"+numeroPensado);
-            console.log(numeroPensado);
+        while (tentativas <= 3) {
+            var chute = parseInt(prompt("qual seria seu numero chute ?"));
 
-        }else{
-            mostra("seu chute foi longe e não atingiu o valor, tente novamente !");
-            mostra("você errou o numero pensado foi >>>>"+numeroPensado);
-            console.log(numeroPensado);
+            if (chute == numeroPensado) {
+                alert("seu chute está certo !!");
+                mostra("você acertou o numero pensado foi >>>>"+numeroPensado);
+                break;
+            }else{
+                alert("seu chute foi longe e não atingiu o valor, tente novamente !");
+                console.log(numeroPensado);
+            }
+            tentativas ++;
         }
+        mostra("numero pensado era "+numeroPensado);
+
     </Script>
 </body>
 </html>
