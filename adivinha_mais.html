@@ -7,11 +7,22 @@
     <title>Adivinha </title>
 </head>
 <body>
-    <input type="text">
+    <input/>
+    <button>enviar</button>
 <Script>
+    var segredo = 5;
+    var input = document.querySelector("input");
 
+    function verifica() {
+        if (input.value == segredo) {
+            alert("vocÊ acertou !!!");
+        } else {
+            alert("vocÊ Errou !!!");
+        }
+    }
 
-
+    var button = document.querySelector("button");
+    button.onclick = verifica;
 
     </Script>
 </body>
